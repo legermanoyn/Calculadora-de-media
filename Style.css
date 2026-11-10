@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 22px;
+    background: #eef5f3;
+    color: #243a36;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.calculator {
+    width: min(100%, 480px);
+    padding: 32px;
+    background: white;
+    border: 1px solid #e3eeea;
+    border-radius: 22px;
+    box-shadow: 0 18px 50px #244c3c12;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon {
+    width: 52px;
+    height: 52px;
+    display: grid;
+    place-items: center;
+    background: #e0f3eb;
+    color: #278565;
+    border-radius: 15px;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.eyebrow {
+    margin: 0 0 5px;
+    color: #329575;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 23px;
+}
+
+.description {
+    color: #788b85;
+    font-size: 13px;
+    margin: 20px 0 25px;
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0 8px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+label span {
+    color: #9aa9a4;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #dce8e3;
+    border-radius: 10px;
+    outline: none;
+    font: 15px 'DM Sans';
+    background: #fbfdfc;
+}
+
+input:focus {
+    border-color: #48a98a;
+    box-shadow: 0 0 0 3px #48a98a1a;
+}
+
+button {
+    width: 100%;
+    margin-top: 23px;
+    padding: 15px;
+    border: 0;
+    border-radius: 11px;
+    background: #278565;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1e7054;
+}
+
+.result {
+    margin-top: 24px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    background: #f1f8f5;
+}
+
+.result-label {
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #6b9182;
+    font-weight: 700;
+}
+
+#average {
+    display: block;
+    margin: 6px 0;
+    font-size: 40px;
+    color: #278565;
+}
+
+#message {
+    margin: 0;
+    color: #59766b;
+    font-size: 13px;
+}
+
+.result.success {
+    background: #eaf7ef;
+}
+
+.result.recovery {
+    background: #fff5e7;
+}
+
+.result.invalid {
+    background: #fff0f0;
+}
+
+.result.invalid #average {
+    color: #c34f4f;
+}
+
+.note {
+    margin: 17px 0 0;
+    color: #9aa9a4;
+    text-align: center;
+    font-size: 10px;
+}
